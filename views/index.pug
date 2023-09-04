@@ -1,5 +1,13 @@
 extends layout
 
 block content
+
   h1= title
-  p Welcome to #{title}
+  
+  each obj in messages
+    ul
+      li=obj.text
+      li=obj.user
+      li=obj.added
+
+  <a href="/new"><button>Add new message</button></a>

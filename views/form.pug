@@ -1,0 +1,21 @@
+extends layout 
+
+block content
+    <a href="/">Back</a>
+
+    h1=title
+    <form method="POST" action="/new" id="form">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" value="">
+       <br>
+       <br>
+
+       <label for="text">Text:</label>
+       <input type="text" id="text" name="text" value="">
+
+    </form>
+    <br>
+
+    <button type="submit" form="form">Submit</button>
+
+    
